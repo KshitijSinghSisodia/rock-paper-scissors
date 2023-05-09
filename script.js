@@ -14,4 +14,18 @@ const getComputerChoice = () => {
       alert("error occurred");
   }
 };
-
+function round(playerSelection, computerSelection) {
+  playerSelection = playerSelection.toLowerCase();
+  computerSelection = computerSelection.toLowerCase();
+  if (playerSelection == computerSelection) {
+    return "It's a Draw!";
+  } else if (playerSelection == "paper" && computerSelection == "rock") {
+    return `You Win! ${playerSelection} beats ${computerSelection}`;
+  } else if (playerSelection == "scissors" && computerSelection == "paper") {
+    return `You Win! ${playerSelection} beats ${computerSelection}`;
+  } else if (playerSelection == "rock" && computerSelection == "scissors") {
+    return `You Win! ${playerSelection} beats ${computerSelection}`;
+  } else {
+    return `You Loose! ${computerSelection} beats ${playerSelection}`;
+  }
+}
