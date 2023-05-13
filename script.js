@@ -35,20 +35,30 @@ function round(playerSelection, computerSelection) {
   return [0, 1];
 }
 
-function game() {
+function game(playerSelection) {
   let computer = 0;
   let player = 0;
-  for (let i = 0; i < 5; i++) {
-    let playerSelection = prompt("Enter your choice [Rock, Paper or Scissors]");
+  // let playerSelection = prompt("Enter your choice [Rock, Paper or Scissors]");
+  while (computer < 5 && player < 5) {
     let res = round(playerSelection, getComputerChoice());
-    computer += res[1];
-    player += res[0];
   }
+  computer += res[1];
+  player += res[0];
   if (player === computer) console.log("Draw");
   else if (player > computer) console.log("You win!! <3");
   else console.log("You lost! Better luck next time!!");
-  player = 0;
-  computer = 0;
+  // player = 0;
+  // computer = 0;
 }
 
-game();
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    console.log(button.value);
+    console.log(game(button.value));
+  });
+});
+
+console.log(buttons);
+// game();

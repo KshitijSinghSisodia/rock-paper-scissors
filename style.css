@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #262335;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-rendering: optimizeLegibility;
+}
+
+.main-heading {
+  font-size: 64px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  /* flex: 0 1 1; */
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 1200px;
+  gap: 64px;
+  /* height: 50vh; */
+  padding: 32px;
+  flex-direction: column;
+}
+
+.scores {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 100px;
+  gap: 32px;
+  border: 2px solid #413e49;
+  padding: 36px;
+  border-radius: 1.5rem;
+  color: #d1d1d1;
+  background-color: #1d1b28;
+}
+
+h2 {
+  font-size: 32px;
+  color: #fff;
+}
+.vs {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+p {
+  font-size: 200px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
+  text-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player,
+.computer {
+  text-align: center;
+  font-size: 120px;
+  color: #fff;
+  min-width: auto;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+button {
+  border: 5px solid #fff;
+  color: #fff;
+  font-size: 64px;
+  border-radius: 1rem;
+  background: none;
+  text-align: center;
+  padding: 0 16px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  background-color: #413e49;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #413e49;
+}
