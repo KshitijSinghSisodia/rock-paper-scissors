@@ -14,7 +14,15 @@ body {
   justify-content: center;
   text-rendering: optimizeLegibility;
 }
-
+.play {
+  font-size: 100px;
+}
+#play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .main-heading {
   font-size: 64px;
   font-weight: 400;
@@ -22,13 +30,11 @@ body {
 }
 
 .container {
-  display: flex;
-  /* flex: 0 1 1; */
+  display: none;
   justify-content: space-between;
   align-items: center;
   flex-basis: 1200px;
   gap: 64px;
-  /* height: 50vh; */
   padding: 32px;
   flex-direction: column;
 }
@@ -46,14 +52,25 @@ body {
   background-color: #1d1b28;
 }
 
-h2 {
+h2,
+.round {
   font-size: 32px;
   color: #fff;
 }
 .vs {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
+  font-weight: 600;
+}
+.versus {
+  flex: 1;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 p {

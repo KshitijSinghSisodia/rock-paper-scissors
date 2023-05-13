@@ -38,10 +38,7 @@ function round(playerSelection, computerSelection) {
 function game(playerSelection) {
   let computer = 0;
   let player = 0;
-  // let playerSelection = prompt("Enter your choice [Rock, Paper or Scissors]");
-  while (computer < 5 && player < 5) {
-    let res = round(playerSelection, getComputerChoice());
-  }
+  let res = round(playerSelection, getComputerChoice());
   computer += res[1];
   player += res[0];
   if (player === computer) console.log("Draw");
@@ -50,6 +47,14 @@ function game(playerSelection) {
   // player = 0;
   // computer = 0;
 }
+
+const playButton = document.querySelector("#play-button");
+const container = document.querySelector(".container");
+
+playButton.addEventListener("click", () => {
+  playButton.style.display = "none";
+  container.style.display = "flex";
+});
 
 const buttons = document.querySelectorAll("button");
 
