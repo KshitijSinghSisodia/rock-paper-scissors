@@ -20,6 +20,8 @@ body {
 #play-button {
   display: flex;
   justify-content: center;
+  gap: 64px;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
 }
@@ -115,3 +117,5 @@ button:hover {
   background-color: #fff;
   color: #413e49;
 }
+
+
